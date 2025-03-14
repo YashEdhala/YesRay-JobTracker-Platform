@@ -48,36 +48,10 @@
             margin-top: 20px;
             color: #444;
         }
-        .email-form {
-            margin-top: 20px;
-        }
-        input[type="email"] {
-            padding: 8px;
-            width: 200px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            padding: 8px 15px;
-            border: none;
-            background-color: #3498db;
-            color: white;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .social-links {
-            margin-top: 20px;
-        }
-        .social-links a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #3498db;
-            font-weight: bold;
-        }
     </style>
     <script>
         function updateCountdown() {
-            const launchDate = new Date("2025-06-01T00:00:00").getTime();
+            const launchDate = new Date("2025-04-30T00:00:00").getTime();
             const now = new Date().getTime();
             const timeLeft = launchDate - now;
 
@@ -97,15 +71,6 @@
         <p>We're working on something amazing. Stay tuned!</p>
         <div class="loader"></div>
         <p class="countdown">Launching in: <span id="countdown"></span></p>
-        
-        <form class="email-form">
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Notify Me</button>
-        </form>
-        
-        <div class="social-links">
-            <a href="#">Twitter</a> | <a href="#">LinkedIn</a> | <a href="#">Facebook</a>
-        </div>
     </div>
 </body>
 </html>
